@@ -1,12 +1,22 @@
-🛳 Titanic EDA
-📌 Overview
-This project performs Exploratory Data Analysis (EDA) on the famous Titanic dataset to uncover patterns, trends, and relationships influencing passenger survival.
-Using Python, the dataset is cleaned, analyzed, and visualized to derive meaningful insights, with results summarized in a detailed PDF report.
+# 🛳 Titanic EDA
 
-📂 Repository Structure
-plaintext
-Copy
-Edit
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)  
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)  
+![License](https://img.shields.io/badge/License-MIT-green.svg)  
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)
+
+---
+
+## 📌 Overview  
+This project performs **Exploratory Data Analysis (EDA)** on the **Titanic dataset** to uncover patterns and relationships that influenced passenger survival.  
+The analysis covers **data cleaning, feature engineering, and visualization**, and the findings are compiled into a **PDF report**.
+
+---
+
+<details>
+<summary>📂 Repository Structure</summary>
+
+```plaintext
 titanic-eda/
 │
 ├── data/
@@ -31,88 +41,84 @@ titanic-eda/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-🛠 Tools & Libraries
-Python – core programming language
+```
+</details>
 
-Pandas – data manipulation & preprocessing
+---
 
-NumPy – numerical operations
+## 🛠 Tools & Libraries  
 
-Matplotlib – static visualizations
+- **Python** – core programming language  
+- **Pandas** – data manipulation & preprocessing  
+- **NumPy** – numerical operations  
+- **Matplotlib** – static visualizations  
+- **Seaborn** – statistical visualizations  
+- **Jupyter Notebook** – analysis environment  
 
-Seaborn – statistical visualizations
+---
 
-Jupyter Notebook – analysis & documentation
+<details>
+<summary>📊 Analysis Workflow</summary>
 
-📊 Analysis Workflow
-1️⃣ Data Loading & Overview
+### 1️⃣ Data Loading & Overview  
+- Loaded train/test datasets  
+- Used `.info()`, `.describe()`, `.head()` for inspection  
 
-Loaded train/test datasets
+### 2️⃣ Data Cleaning  
+- Filled missing values (**Age**, **Embarked**, **Fare**)  
+- Created new features: `FamilySize`, `IsAlone`  
 
-Used .info(), .describe(), .head() for initial inspection
+### 3️⃣ Exploratory Data Analysis  
+- Survival distribution by **Sex**, **Pclass**, **Age**, **Fare**  
+- Feature correlations via heatmap  
 
-2️⃣ Data Cleaning
+### 4️⃣ Visualization  
+- Histograms  
+- Bar charts  
+- Boxplots  
+- Heatmaps  
 
-Filled missing values (Age, Embarked, Fare)
+### 5️⃣ Key Findings  
+- **Females** had higher survival rates  
+- **First-class** passengers had better chances  
+- **Children** had higher survival rates  
+- Higher fares correlated with survival  
+- Traveling alone lowered survival chances  
 
-Created new features: FamilySize, IsAlone
+</details>
 
-3️⃣ Exploratory Data Analysis
+---
 
-Examined survival distribution by Sex, Pclass, Age, Fare
+## 📈 Example Visualizations  
 
-Studied feature correlations using a heatmap
+| Heatmap | Survival Count |
+|---------|----------------|
+| ![Correlation Heatmap](images/numeric_correlation_heatmap.png) | ![Survival Count](images/Survival_Count.png) |
 
-4️⃣ Visualization
+---
 
-Histograms & bar charts
+## 📄 Report  
+📁 **[Titanic EDA Report (PDF)](reports/titanic_eda_report.pdf)**  
 
-Boxplots
+---
 
-Heatmaps
+## 🚀 How to Run  
 
-5️⃣ Key Findings
-
-Females had higher survival rates than males
-
-First-class passengers had better chances of survival
-
-Children had higher survival rates compared to adults
-
-Higher fares correlated positively with survival
-
-Traveling alone lowered survival chances
-
-📈 Example Visualizations
-
-
-
-📄 Report
-A detailed PDF report summarizing the findings is available here:
-📁 reports/titanic_eda_report.pdf
-
-🚀 How to Run
-Clone the repository
-
-bash
-Copy
-Edit
+\`\`\`bash
+# 1. Clone the repository
 git clone https://github.com/yourusername/titanic-eda.git
 cd titanic-eda
-Install dependencies
 
-bash
-Copy
-Edit
+# 2. Install dependencies
 pip install -r requirements.txt
-Run the Jupyter Notebook
 
-bash
-Copy
-Edit
+# 3. Open the Jupyter Notebook
 jupyter notebook notebooks/titanic_eda.ipynb
-📬 Author
-Rina Kumari
-📧 Email: rinavadera2003@gmail.com
-🔗 LinkedIn: Rina Kumari
+\`\`\`
 
+---
+
+## 📬 Author  
+**Rina Kumari**  
+📧 [rinavadera2003@gmail.com](mailto:rinavadera2003@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/rina-508462249/)  
