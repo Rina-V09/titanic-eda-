@@ -1,14 +1,12 @@
-# 🛳 Titanic EDA
+🛳 Titanic EDA
+📌 Overview
+This project performs Exploratory Data Analysis (EDA) on the famous Titanic dataset to uncover patterns, trends, and relationships influencing passenger survival.
+Using Python, the dataset is cleaned, analyzed, and visualized to derive meaningful insights, with results summarized in a detailed PDF report.
 
-## 📌 Overview  
-This project performs **Exploratory Data Analysis (EDA)** on the famous **Titanic dataset** to uncover patterns, trends, and relationships influencing passenger survival.  
-Using Python, we clean and analyze the data, generate insightful visualizations, and summarize findings in a detailed PDF report.
-
----
-
-## 📂 Repository Structure  
-
-```plaintext
+📂 Repository Structure
+plaintext
+Copy
+Edit
 titanic-eda/
 │
 ├── data/
@@ -33,88 +31,88 @@ titanic-eda/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+🛠 Tools & Libraries
+Python – core programming language
 
----
-
-# 🛠 Tools & Libraries
-Python
-
-Pandas – data manipulation
-
-Matplotlib & Seaborn – visualizations
+Pandas – data manipulation & preprocessing
 
 NumPy – numerical operations
 
-Jupyter Notebook – analysis environment
+Matplotlib – static visualizations
 
----
+Seaborn – statistical visualizations
 
-## 📊 Analysis Steps
+Jupyter Notebook – analysis & documentation
+
+📊 Analysis Workflow
 1️⃣ Data Loading & Overview
-Checked data structure using .info(), .describe(), .head()
+
+Loaded train/test datasets
+
+Used .info(), .describe(), .head() for initial inspection
 
 2️⃣ Data Cleaning
+
 Filled missing values (Age, Embarked, Fare)
 
 Created new features: FamilySize, IsAlone
 
 3️⃣ Exploratory Data Analysis
-Survival distribution by Sex, Pclass, Age, Fare
 
-Relationship between features (heatmap)
+Examined survival distribution by Sex, Pclass, Age, Fare
+
+Studied feature correlations using a heatmap
 
 4️⃣ Visualization
-Histograms
+
+Histograms & bar charts
 
 Boxplots
 
-Bar charts
-
 Heatmaps
 
-5️⃣ Summary of Findings
-Higher survival for females and first-class passengers
+5️⃣ Key Findings
 
-Children had better survival chances
+Females had higher survival rates than males
 
-Higher fares correlated with survival
+First-class passengers had better chances of survival
 
-Traveling alone lowered survival rate
+Children had higher survival rates compared to adults
 
----
-## 📈 Example Visualizations
-![Correlation Heatmap](images/numeric_correlation_heatmap.png)  
-![Survival Count](images/Survival_Count.png)
----
+Higher fares correlated positively with survival
+
+Traveling alone lowered survival chances
+
+📈 Example Visualizations
+
+
 
 📄 Report
-A detailed PDF report summarizing the findings can be found here:
-reports/titanic_eda_report.pdf
-
----
+A detailed PDF report summarizing the findings is available here:
+📁 reports/titanic_eda_report.pdf
 
 🚀 How to Run
-1. Clone the repository
+Clone the repository
+
 bash
 Copy
 Edit
 git clone https://github.com/yourusername/titanic-eda.git
 cd titanic-eda
+Install dependencies
 
-2. Install dependencies
 bash
 Copy
 Edit
 pip install -r requirements.txt
+Run the Jupyter Notebook
 
-3. Open Jupyter Notebook
 bash
 Copy
 Edit
 jupyter notebook notebooks/titanic_eda.ipynb
-
 📬 Author
 Rina Kumari
-📧 rinavadera2003@gmail.com
-🔗 https://www.linkedin.com/in/rina-508462249/
+📧 Email: rinavadera2003@gmail.com
+🔗 LinkedIn: Rina Kumari
 
